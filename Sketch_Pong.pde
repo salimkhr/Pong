@@ -5,7 +5,7 @@ int w, z;
 
 void setup() 
 {
- size(400,400);
+ size(600,400);
  background(0);
  x = 200;
  y = 200; 
@@ -49,9 +49,9 @@ void bouger()
 
 void rebondir() 
 {
-   
+  println(y+" ");
  // si on est trop bas et le déplacement vertical est positif
- if (y > width-(w*3)-10 && deplacementY > 0) 
+ if (y > height-10 && deplacementY > 0) 
  { 
    deplacementY = -deplacementY; // rendre négative la valeur
  }
